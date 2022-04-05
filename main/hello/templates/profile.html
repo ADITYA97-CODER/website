@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>{{user.username}}</h1>
+ <a href='/login'><h2>reviews</h2></a>
+    {% for x in reviews %}
+    <h1>{{x.content}}</h1>
+    
+    
+    {% endfor %}
+
+
+
+{% endblock body %}
+
+
+
+
